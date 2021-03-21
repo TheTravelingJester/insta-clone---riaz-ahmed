@@ -177,23 +177,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="NMM-ic-4Bq">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="NMM-ic-4Bq">
                                 <rect key="frame" x="6" y="53" width="403" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="4Q9-7u-5I5" appends="YES" id="qhO-XF-ucE"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-Qn-G8O">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-Qn-G8O">
                                 <rect key="frame" x="6" y="519" width="388" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="onSubmit:" destination="Dwx-D8-Ls8" eventType="touchUpInside" id="vBQ-2U-rlP"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIf-Rz-Tj6">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIf-Rz-Tj6">
                                 <rect key="frame" x="13" y="461" width="388" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -202,8 +200,15 @@
                         <viewLayoutGuide key="safeArea" id="f9n-8l-o2E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rB2-Qn-G8O" firstAttribute="top" secondItem="JIf-Rz-Tj6" secondAttribute="bottom" constant="24" id="75N-LO-mWi"/>
                             <constraint firstItem="f9n-8l-o2E" firstAttribute="trailing" secondItem="JIf-Rz-Tj6" secondAttribute="trailing" constant="13" id="9Ei-IZ-2BY"/>
+                            <constraint firstItem="rB2-Qn-G8O" firstAttribute="leading" secondItem="NMM-ic-4Bq" secondAttribute="leading" id="C1f-7b-dmA"/>
+                            <constraint firstItem="JIf-Rz-Tj6" firstAttribute="top" secondItem="NMM-ic-4Bq" secondAttribute="bottom" constant="8" symbolic="YES" id="L7p-Bi-B44"/>
                             <constraint firstItem="JIf-Rz-Tj6" firstAttribute="leading" secondItem="f9n-8l-o2E" secondAttribute="leading" constant="13" id="TX2-Jq-K9E"/>
+                            <constraint firstItem="rB2-Qn-G8O" firstAttribute="leading" secondItem="f9n-8l-o2E" secondAttribute="leading" constant="6" id="Tlv-lz-vqv"/>
+                            <constraint firstAttribute="bottom" secondItem="JIf-Rz-Tj6" secondAttribute="bottom" constant="347" id="ZJw-5Q-waj"/>
+                            <constraint firstItem="JIf-Rz-Tj6" firstAttribute="centerX" secondItem="NMM-ic-4Bq" secondAttribute="centerX" id="fIS-FT-e8P"/>
+                            <constraint firstItem="rB2-Qn-G8O" firstAttribute="trailing" secondItem="wAg-Pa-lME" secondAttribute="trailingMargin" id="sSM-eQ-aQB"/>
                         </constraints>
                     </view>
                     <connections>
