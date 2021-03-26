@@ -23,6 +23,11 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='https://media.giphy.com/media/CkEJrPFNWvm123Nd2l/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Notes
+I had some layout issues and had to run on a different phone simulator.
+
+
 # Parstagram - Part I
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
