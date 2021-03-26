@@ -2,7 +2,9 @@
 //  LoginViewController.swift
 //  Parstagram
 //
-//  Created by RIAZ on 3/19/21.
+//  insta clone - riaz ahmed
+//
+//  Created by RIAZ on 3/20/21.
 //
 
 import UIKit
@@ -12,37 +14,36 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-        
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func onSingnup(_ sender: Any) {
-    let user = PFUser()
-        user.username = usernameField.text
-        user.password = passwordField.text
+    @IBAction func onSignIn(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
         
-        user.signUpInBackground{(yes, no) in
-            if yes {
-                self.performSegue(withIdentifier: "logSeg", sender: nil)
-            }else{
-                print ("\(String(describing: no?.localizedDescription))")
-            }
+        PFUser.logInWithUsername(inBackground: username, password: password)
+            { (user, error) in
+                if user != nil {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else {
+                    print("Error: \(error?.localizedDescription)")
+                }
+            
         }
     }
     
-    @IBAction func onSingin(_ sender: Any) {
-    let username = usernameField.text!
-        let password = passwordField.text!
+    @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
         
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user,no)in
-            if user != nil{
-                self.performSegue(withIdentifier: "logSeg", sender: nil)
-            }else{
-                print ("error\(String(describing: no?.localizedDescription))")
+        user.signUpInBackground{ (success, error) in
+            if (success) {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
             }
         }
     }

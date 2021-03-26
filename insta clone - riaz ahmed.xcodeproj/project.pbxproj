@@ -10,15 +10,14 @@
 		0A19FB3E86226D2D3314D696 /* Pods_insta_clone___riaz_ahmed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9867E02C0E00B4EE1B97DB /* Pods_insta_clone___riaz_ahmed.framework */; };
 		69F1B51A435BF1521DB687E3 /* Pods_insta_clone___riaz_ahmedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D139F70E9AD42A7ACD24C703 /* Pods_insta_clone___riaz_ahmedTests.framework */; };
 		9C1EA30A260617CD00C3598E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EA309260617CD00C3598E /* AppDelegate.swift */; };
-		9C1EA30C260617CD00C3598E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EA30B260617CD00C3598E /* SceneDelegate.swift */; };
 		9C1EA311260617CD00C3598E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EA30F260617CD00C3598E /* Main.storyboard */; };
 		9C1EA313260617CD00C3598E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EA312260617CD00C3598E /* Assets.xcassets */; };
 		9C1EA316260617CD00C3598E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EA314260617CD00C3598E /* LaunchScreen.storyboard */; };
-		9C1EA321260617CD00C3598E /* insta_clone___riaz_ahmedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EA320260617CD00C3598E /* insta_clone___riaz_ahmedTests.swift */; };
 		9C1EA32C260617CD00C3598E /* insta_clone___riaz_ahmedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EA32B260617CD00C3598E /* insta_clone___riaz_ahmedUITests.swift */; };
 		9C9F7A332606202500E7A7A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F7A322606202500E7A7A5 /* LoginViewController.swift */; };
 		9C9F7A382606203700E7A7A5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F7A372606203700E7A7A5 /* FeedViewController.swift */; };
 		9C9F7A402606232900E7A7A5 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F7A3F2606232900E7A7A5 /* cameraViewController.swift */; };
+		9CE0BDAC260D99C000CD2D0C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0BDAB260D99C000CD2D0C /* CommentCell.swift */; };
 		9CFAA4302607C3EA0053F402 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAA42F2607C3EA0053F402 /* PostCell.swift */; };
 		BBCB8E7DB92644CB361B072F /* Pods_insta_clone___riaz_ahmed_insta_clone___riaz_ahmedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E22DE074F84C2FC14C165 /* Pods_insta_clone___riaz_ahmed_insta_clone___riaz_ahmedUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,13 +48,11 @@
 		4B9867E02C0E00B4EE1B97DB /* Pods_insta_clone___riaz_ahmed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_insta_clone___riaz_ahmed.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EA306260617CD00C3598E /* insta clone - riaz ahmed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "insta clone - riaz ahmed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EA309260617CD00C3598E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C1EA30B260617CD00C3598E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9C1EA310260617CD00C3598E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1EA312260617CD00C3598E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1EA315260617CD00C3598E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1EA317260617CD00C3598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1EA31C260617CD00C3598E /* insta clone - riaz ahmedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "insta clone - riaz ahmedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C1EA320260617CD00C3598E /* insta_clone___riaz_ahmedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "insta_clone___riaz_ahmedTests.swift"; sourceTree = "<group>"; };
 		9C1EA322260617CD00C3598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1EA327260617CD00C3598E /* insta clone - riaz ahmedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "insta clone - riaz ahmedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EA32B260617CD00C3598E /* insta_clone___riaz_ahmedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "insta_clone___riaz_ahmedUITests.swift"; sourceTree = "<group>"; };
@@ -63,6 +60,7 @@
 		9C9F7A322606202500E7A7A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9C9F7A372606203700E7A7A5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9C9F7A3F2606232900E7A7A5 /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
+		9CE0BDAB260D99C000CD2D0C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		9CFAA42F2607C3EA0053F402 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D139F70E9AD42A7ACD24C703 /* Pods_insta_clone___riaz_ahmedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_insta_clone___riaz_ahmedTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F85460B09ECD7D12B10B38 /* Pods-insta clone - riaz ahmedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta clone - riaz ahmedTests.release.xcconfig"; path = "Target Support Files/Pods-insta clone - riaz ahmedTests/Pods-insta clone - riaz ahmedTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,11 +136,11 @@
 				9C1EA317260617CD00C3598E /* Info.plist */,
 				9C1EA312260617CD00C3598E /* Assets.xcassets */,
 				9C1EA309260617CD00C3598E /* AppDelegate.swift */,
-				9C1EA30B260617CD00C3598E /* SceneDelegate.swift */,
 				9C1EA30F260617CD00C3598E /* Main.storyboard */,
 				9C9F7A3F2606232900E7A7A5 /* cameraViewController.swift */,
 				9C1EA314260617CD00C3598E /* LaunchScreen.storyboard */,
 				9CFAA42F2607C3EA0053F402 /* PostCell.swift */,
+				9CE0BDAB260D99C000CD2D0C /* CommentCell.swift */,
 				9C9F7A372606203700E7A7A5 /* FeedViewController.swift */,
 				9C9F7A322606202500E7A7A5 /* LoginViewController.swift */,
 			);
@@ -152,7 +150,6 @@
 		9C1EA31F260617CD00C3598E /* insta clone - riaz ahmedTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C1EA320260617CD00C3598E /* insta_clone___riaz_ahmedTests.swift */,
 				9C1EA322260617CD00C3598E /* Info.plist */,
 			);
 			path = "insta clone - riaz ahmedTests";
@@ -419,8 +416,8 @@
 				9C1EA30A260617CD00C3598E /* AppDelegate.swift in Sources */,
 				9C9F7A402606232900E7A7A5 /* cameraViewController.swift in Sources */,
 				9C9F7A382606203700E7A7A5 /* FeedViewController.swift in Sources */,
-				9C1EA30C260617CD00C3598E /* SceneDelegate.swift in Sources */,
 				9CFAA4302607C3EA0053F402 /* PostCell.swift in Sources */,
+				9CE0BDAC260D99C000CD2D0C /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +425,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1EA321260617CD00C3598E /* insta_clone___riaz_ahmedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
